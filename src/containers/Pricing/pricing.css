@@ -1,0 +1,7 @@
+.pricing-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border: 1px solid;
+}

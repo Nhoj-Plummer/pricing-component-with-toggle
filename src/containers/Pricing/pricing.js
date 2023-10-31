@@ -5,7 +5,17 @@ import "./Pricing.css"
 const Pricing = () => {
   return (
     <div className="pricing-container">
-      <Card />
+      <div className="pricing-container_text">
+        <h1>Our Pricing</h1>
+      </div>
+      <div className="pricing-container_toggle">
+        
+      </div>
+      <div className="pricing-container_prices">
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </div>
   )
 }

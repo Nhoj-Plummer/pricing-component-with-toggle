@@ -10,7 +10,7 @@ const Pricing = () => {
       </div>
       <div className="pricing-container_toggle">
         <p>Annually</p>
-
+        <Toggle />
         <p>Monthly</p>
       </div>
       <div className="pricing-container_prices">

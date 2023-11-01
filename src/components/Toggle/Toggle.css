@@ -1,3 +1,18 @@
 .toggle-container {
-  position: relative;
+  width: 70px;
+  height: 32px;
+  border: 1px solid black;
+  background: var(--color-gradient);
+  cursor: pointer;
+  padding: 2px;
 }
+
+/* .toggle-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+  border: 1px solid black;
+} */

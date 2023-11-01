@@ -4,15 +4,47 @@
   border: 1px solid black;
   background: var(--color-gradient);
   cursor: pointer;
-  padding: 2px;
+  border-radius: 30px;
+  padding: 3px;
 }
 
-/* .toggle-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 38px;
-  height: 38px;
-  cursor: pointer;
+.toggle-btn {
   border: 1px solid black;
-} */
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.inactive {
+  background-color: red;
+  animation-name: slide-right;
+  animation-duration: 1s;
+}
+
+.active {
+  background-color: pink;
+  animation-name: slide-right;
+  animation-duration: 1s;
+}
+
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(35px);
+    transform: translateX(35px);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(35px);
+    transform: translateX(35px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}

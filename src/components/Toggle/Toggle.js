@@ -1,10 +1,12 @@
-import React from "react"
+import React, {useState} from "react"
 import "./Toggle.css"
 
-const Toggle = () => {
+const Toggle = ({}) => {
+  const [toggle, setToggle] = useState(false)
+
   return (
-    <div className="toggle-container">
-      <div className="toggle-btn"></div>
+    <div className="toggle-container" onClick={() => setToggle(!toggle)}>
+      <div className={`toggle-btn ${!toggle ? "inactive" : "active"}`}></div>
     </div>
   )
 }

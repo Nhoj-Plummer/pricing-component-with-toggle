@@ -8,15 +8,14 @@
   padding: 3px;
 }
 
-/* .toggle-btn {
-
+.toggle-handle {
   width: 25px;
   height: 25px;
   border-radius: 50%;
   background-color: var(--color-very-light-grayish-blue);
 }
 
-.inital {
+/* .inital {
 }
 
 .inactive {

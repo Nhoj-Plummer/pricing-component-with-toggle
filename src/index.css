@@ -3,7 +3,10 @@
 :root {
   --font-family: "Montserrat", sans-serif;
 
-  /* Color  */
+  /* Primary Color  */
+  --color-gradient: linear-gradient(hsl(236, 72%, 79%) to hsl(237, 63%, 64%));
+
+  /* Neutral Color  */
   --color-very-light-grayish-blue: hsl(240, 78%, 98%);
   --color-light-grayish-blule: hsl(234, 14%, 74%);
   --color-grayish-blue: hsl(233, 13%, 49%);

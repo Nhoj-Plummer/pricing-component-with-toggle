@@ -1,5 +1,5 @@
 import React from "react"
-import {Card} from "../../components/componentindex"
+import {Card, Toggle} from "../../components/componentindex"
 import "./Pricing.css"
 
 const Pricing = () => {
@@ -9,7 +9,9 @@ const Pricing = () => {
         <h1>Our Pricing</h1>
       </div>
       <div className="pricing-container_toggle">
-        
+        <p>Annually</p>
+
+        <p>Monthly</p>
       </div>
       <div className="pricing-container_prices">
         <Card />

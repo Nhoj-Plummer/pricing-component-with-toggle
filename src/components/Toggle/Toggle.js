@@ -11,8 +11,8 @@ const Toggle = ({setPrice}) => {
   }
 
   return (
-    <div className="toggle-container" onClick={handleToggle}>
-      <div className="toggle-handle"></div>
+    <div className="toggle-container" onClick={handleToggle} style={{justifyContent: !toggle ? "" : "flex-end"}}>
+      <div className={`toggle-handle`}></div>
     </div>
   )
 }

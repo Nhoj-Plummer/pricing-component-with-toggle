@@ -1,8 +1,10 @@
-import React from "react"
+import React, {useState} from "react"
 import {Card, Toggle} from "../../components/componentindex"
 import "./Pricing.css"
 
 const Pricing = () => {
+  const [price, setPrice] = useState(false)
+
   return (
     <div className="pricing-container">
       <div className="pricing-container_text">

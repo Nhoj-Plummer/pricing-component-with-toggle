@@ -3,7 +3,7 @@ import {Card, Toggle} from "../../components/componentindex"
 import "./Pricing.css"
 
 const Pricing = () => {
-  const [price, setPrice] = useState(false)
+  const [price, setPrice] = useState()
 
   return (
     <div className="pricing-container">
@@ -12,7 +12,7 @@ const Pricing = () => {
       </div>
       <div className="pricing-container_toggle">
         <p>Annually</p>
-        <Toggle />
+        <Toggle setPrice={setPrice} />
         <p>Monthly</p>
       </div>
       <div className="pricing-container_prices">

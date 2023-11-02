@@ -2,7 +2,7 @@ import React, {useState} from "react"
 import "./Toggle.css"
 
 const Toggle = ({setPrice}) => {
-  const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] = useState()
 
   const handleToggle = () => {
     setToggle(!toggle)

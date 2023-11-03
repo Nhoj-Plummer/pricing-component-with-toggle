@@ -5,6 +5,8 @@ import "./Pricing.css"
 const Pricing = () => {
   const [price, setPrice] = useState()
 
+  // console.log(price.toString())
+
   return (
     <div className="pricing-container">
       <div className="pricing-container_text">
@@ -15,11 +17,13 @@ const Pricing = () => {
         <Toggle setPrice={setPrice} />
         <p>Monthly</p>
       </div>
-      <div className="pricing-container_prices">
-        <Card />
-        <Card />
-        <Card />
-      </div>
+      {price && (
+        <div className="pricing-container_prices">
+          <Card />
+          <Card />
+          <Card />
+        </div>
+      )}
     </div>
   )
 }

@@ -18,7 +18,15 @@ const Pricing = () => {
         <p>Monthly</p>
       </div>
       {price && (
-        <div className="pricing-container_prices">
+        <div className="pricing-container_prices annually">
+          <Card />
+          <Card />
+          <Card />
+        </div>
+      )}
+
+      {!price && (
+        <div className="pricing-container_prices monthly">
           <Card />
           <Card />
           <Card />

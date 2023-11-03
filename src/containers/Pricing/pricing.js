@@ -3,9 +3,8 @@ import {Card, Toggle} from "../../components/componentindex"
 import "./Pricing.css"
 
 const Pricing = () => {
+  // State used to get the boolean from the Toggle component
   const [price, setPrice] = useState()
-
-  // console.log(price.toString())
 
   return (
     <div className="pricing-container">
@@ -20,15 +19,11 @@ const Pricing = () => {
       {price && (
         <div className="pricing-container_prices annually">
           <Card />
-          <Card />
-          <Card />
         </div>
       )}
 
       {!price && (
-        <div className="pricing-container_prices monthly">
-          <Card />
-          <Card />
+        <div className="pricing-container_prices mnothly">
           <Card />
         </div>
       )}

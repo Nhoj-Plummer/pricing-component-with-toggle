@@ -5,13 +5,17 @@
   flex-direction: column;
   vertical-align: middle;
   margin: auto;
-  border: 1px solid;
+  font-family: var(--font-family);
+  border: 1px solid green;
 }
 
 .pricing-container_text {
   border: 1px solid red;
 }
 
+.pricing-container_text h1 {
+  color: var(--color-dark-grayish-blue);
+}
 .pricing-container_prices {
   display: flex;
   border: 1px solid blue;
@@ -22,4 +26,9 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+.pricing-container_toggle p {
+  color: var(--color-light-grayish-blue);
+  font-weight: 700;
 }

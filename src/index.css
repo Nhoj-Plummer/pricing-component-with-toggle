@@ -8,13 +8,8 @@
 
   /* Neutral Color  */
   --color-very-light-grayish-blue: hsl(240, 78%, 98%);
-  --color-light-grayish-blule: hsl(234, 14%, 74%);
+  --color-light-grayish-blue: hsl(234, 14%, 74%);
   --color-grayish-blue: hsl(233, 13%, 49%);
   --color-dark-grayish-blue: hsl(0, 0%, 41%);
 }
 
-body.preload {
-  animation-duration: 0s !important;
-  -webkit-animation-duration: 0s !important;
-  transition: background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;
-}

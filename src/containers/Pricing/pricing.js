@@ -13,11 +13,15 @@ const Pricing = () => {
       <div className="pricing-container_text">
         <h1>Our Pricing</h1>
       </div>
+
+      {/* Toggle Component Button Section */}
       <div className="pricing-container_toggle">
         <p>Annually</p>
         <Toggle setPrice={setPrice} />
         <p>Monthly</p>
       </div>
+
+      {/* Annually Options Mapping/Conditioning */}
       {!price && (
         <div className="pricing-container_prices annually">
           {annualData.map(option => {
@@ -28,6 +32,7 @@ const Pricing = () => {
         </div>
       )}
 
+      {/* Monthly Options Mapping/Conditioning */}
       {price && (
         <div className="pricing-container_prices mnothly">
           <Card title="Monthly" />

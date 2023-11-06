@@ -6,7 +6,7 @@ const Toggle = ({setPrice}) => {
 
   const handleToggle = () => {
     setToggle(!toggle)
-    setPrice(() => toggle)
+    setPrice(() => !toggle)
     console.log(toggle.toString())
   }
 

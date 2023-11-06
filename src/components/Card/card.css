@@ -1,3 +1,9 @@
 .card-container {
+  height: 250px;
+  width: 250px;
   border: 1px solid;
+}
+
+.card-container_rules ul {
+  list-style: none;
 }

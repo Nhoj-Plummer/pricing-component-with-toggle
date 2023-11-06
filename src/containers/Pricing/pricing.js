@@ -1,10 +1,12 @@
-import React, {useState} from "react"
+import {React, useState} from "react"
 import {Card, Toggle} from "../../components/componentindex"
 import "./Pricing.css"
 
 const Pricing = () => {
   // State used to get the boolean from the Toggle component
   const [price, setPrice] = useState()
+
+  // const annualData = [{title: "Basic", price: "$199.99", storage: "500 GB Storage", users: "2 Users Allowed", sendGB: "Send up to 3 GB"}, {}]
 
   return (
     <div className="pricing-container">
@@ -16,15 +18,15 @@ const Pricing = () => {
         <Toggle setPrice={setPrice} />
         <p>Monthly</p>
       </div>
-      {price && (
+      {!price && (
         <div className="pricing-container_prices annually">
-          <Card />
+          <Card title="Annually" />
         </div>
       )}
 
-      {!price && (
+      {price && (
         <div className="pricing-container_prices mnothly">
-          <Card />
+          <Card title="Monthly" />
         </div>
       )}
     </div>

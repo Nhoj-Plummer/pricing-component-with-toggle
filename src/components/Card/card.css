@@ -1,9 +1,23 @@
 .card-container {
-  height: 250px;
-  
+  width: 100%;
+  border-radius: 10px;
+  background-color: var(--color-very-light-grayish-blue);
   border: 1px solid purple;
 }
 
 .card-container_rules ul {
   list-style: none;
+}
+
+/* Conditional Section */
+/* Mobile Rules */
+@media screen and (max-width: 540px) {
+  .card-container {
+    height: 350px;
+  }
+}
+
+/* Desktop Rules */
+@media screen and (min-width: 540px) {
+
 }

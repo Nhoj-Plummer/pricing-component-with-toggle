@@ -4,7 +4,7 @@
   justify-content: center;
   flex-direction: column;
   vertical-align: middle;
-  margin: auto;
+  margin: 2rem auto;
   font-family: var(--font-family);
   text-align: center;
   border: 1px solid green;
@@ -19,17 +19,35 @@
 }
 .pricing-container_prices {
   display: flex;
-  
+  justify-content: center;
+  border: 1px solid;
 }
 
 .pricing-container_toggle {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
   gap: 10px;
 }
 
 .pricing-container_toggle p {
   color: var(--color-light-grayish-blue);
   font-weight: 700;
+}
+
+/* Conditional Section */
+/* Mobile Rules */
+@media screen and (max-width: 540px) {
+  .pricing-container_prices {
+    width: 90%;
+    flex-direction: column;
+  }
+}
+
+/* Desktop Rules */
+@media screen and (min-width: 540px) {
+  .pricing-container_prices {
+    width: 70%;
+  }
 }

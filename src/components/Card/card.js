@@ -1,11 +1,14 @@
-import React from "react"
-import "./Card.css"
+import React from "react";
+import "./Card.css";
 
 const Card = ({styles, title, price, storage, users, sendGB}) => {
   return (
     <div className="card-container" styles={styles}>
       <p>{title}</p>
-      <h1>{price}</h1>
+      <h1>
+        <span>$</span>
+        {price}
+      </h1>
       <div className="card-container_rules">
         <ul>
           <li>
@@ -20,7 +23,7 @@ const Card = ({styles, title, price, storage, users, sendGB}) => {
         </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;

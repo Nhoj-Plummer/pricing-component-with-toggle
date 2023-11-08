@@ -6,6 +6,7 @@
   vertical-align: middle;
   margin: auto;
   font-family: var(--font-family);
+  text-align: center;
   border: 1px solid green;
 }
 
@@ -18,7 +19,7 @@
 }
 .pricing-container_prices {
   display: flex;
-  border: 1px solid blue;
+  
 }
 
 .pricing-container_toggle {

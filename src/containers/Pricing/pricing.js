@@ -6,9 +6,18 @@ const Pricing = () => {
   // State used to get the boolean from the Toggle component
   const [price, setPrice] = useState();
 
+  const specialCardStyles = {backgroundColor: "var(--color-gradient"};
+
   const annualData = [
     {title: "Basic", price: "199.99", storage: "500 GB Storage", users: "2 Users Allowed", sendGB: "Send up to 3 GB"},
-    {title: "Professional", price: "249.99", storage: "1 TB Storage", users: "5 Users Allowed", sendGB: "Send up to 10 GB"},
+    {
+      styles: {specialCardStyles},
+      title: "Professional",
+      price: "249.99",
+      storage: "1 TB Storage",
+      users: "5 Users Allowed",
+      sendGB: "Send up to 10 GB"
+    },
     {title: "Master", price: "399.99", storage: "2 TB Storage", users: "10 Users Allowed", sendGB: "Send up to 20 GB"}
   ];
 

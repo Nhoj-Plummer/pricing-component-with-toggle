@@ -1,9 +1,9 @@
 import React from "react";
 import "./Card.css";
 
-const Card = ({styles, title, price, storage, users, sendGB}) => {
+const Card = ({id, style, title, price, storage, users, sendGB}) => {
   return (
-    <div className="card-container" styles={styles}>
+    <div className="card-container" id={id} style={style}>
       <div className="card-container_text">
         <p>{title}</p>
         <h1>

@@ -4,16 +4,21 @@
   background-color: var(--color-very-light-grayish-blue);
   font-weight: 700;
   color: var(--color-grayish-blue);
+  box-shadow: 1px 1px 13px 0px rgba(0, 0, 0, 0.75);
   border: 1px solid purple;
 }
 
 .card-container_text,
-.card-container_text h1 {
+.card-container_text h1,
+.card-container_rules,
+.card-container_rules li,
+.card-container-button {
   margin-top: 1rem;
 }
 
 .card-container_text h1 {
-  font-size: 50px;
+  color: var(--color-dark-grayish-blue);
+  font-size: 75px;
 }
 
 .card-container_text h1 span {
@@ -31,8 +36,25 @@
 }
 
 .card-container_rules span {
-  width: 100%;
-  border: 2px solid;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 2.5;
+  width: 90%;
+  border: 1px solid;
+}
+
+.card-container-button {
+  border: 1px solid;
+}
+
+.card-container-button button {
+  border-radius: 5px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--color-very-light-grayish-blue);
+  background: var(--color-gradient);
+  width: 90%;
+  height: 40px;
 }
 
 /* Conditional Section */
@@ -40,6 +62,7 @@
 @media screen and (max-width: 540px) {
   .card-container {
     height: 25rem;
+    margin-top: 1rem;
   }
 }
 

@@ -25,6 +25,10 @@ const Card = ({styles, title, price, storage, users, sendGB}) => {
           </li>
         </ul>
       </div>
+
+      <div className="card-container-button">
+        <button>LEARN MORE</button>
+      </div>
     </div>
   );
 };

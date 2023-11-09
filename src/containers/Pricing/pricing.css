@@ -19,6 +19,7 @@
 .pricing-container_prices {
   display: flex;
   justify-content: center;
+  margin-top: 2rem;
   border: 1px solid;
 }
 

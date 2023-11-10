@@ -1,8 +1,34 @@
-import {React, useState} from "react";
+import {React, useState, useEffect} from "react";
 import {Card, Toggle} from "../../components/componentindex";
 import "./Pricing.css";
 
 const Pricing = () => {
+  //State used to get the width and height of the screen
+  function getWindowDimensions() {
+    const {innerWidth: width, innerHeight: height} = window;
+    return {
+      width,
+      height
+    };
+  }
+
+  function useWindowDimensions() {
+    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+    useEffect(() => {
+      function handleResize() {
+        setWindowDimensions(getWindowDimensions());
+      }
+
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    return windowDimensions;
+  }
+
+  const {width} = useWindowDimensions();
+
   // State used to get the boolean from the Toggle component
   const [price, setPrice] = useState();
 
@@ -10,7 +36,7 @@ const Pricing = () => {
     {id: 1, title: "Basic", price: "199.99", storage: "500 GB Storage", users: "2 Users Allowed", sendGB: "Send up to 3 GB", textColor: {color: "var(--color-grayish-blue)"}},
     {
       id: 2,
-      style: {background: "var(--color-gradient)", color: "var( --color-very-light-grayish-blue)"},
+      style: {background: "var(--color-gradient)", color: "var( --color-very-light-grayish-blue)", position: width > 540 ? "relative" : ""},
       title: "Professional",
       price: "249.99",
       storage: "1 TB Storage",

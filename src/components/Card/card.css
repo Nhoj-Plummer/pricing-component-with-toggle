@@ -1,23 +1,13 @@
 .card-container {
   width: 100%;
   border-radius: 10px;
-  /* background-color: var(--color-very-light-grayish-blue); */
   background: var(--color-very-light-grayish-blue);
   font-weight: 700;
-  color: var(--color-grayish-blue);
+  
   box-shadow: 1px 1px 13px 0px rgba(0, 0, 0, 0.75);
 }
 
-.card-container_text,
-.card-container_text h1,
-.card-container_rules,
-.card-container_rules li,
-.card-container-button {
-  margin-top: 1rem;
-}
-
 .card-container_text h1 {
-  color: var(--color-dark-grayish-blue);
   font-size: 75px;
 }
 
@@ -35,6 +25,7 @@
   vertical-align: middle;
   line-height: 2.5;
   width: 90%;
+ 
   border-top: 1px solid;
   border-bottom: 1px solid;
 }
@@ -53,11 +44,32 @@
 /* Mobile Rules */
 @media screen and (max-width: 540px) {
   .card-container {
-    height: 25rem;
+    height: 27rem;
     margin-top: 1rem;
+  }
+
+  .card-container_text,
+  .card-container_text h1,
+  .card-container_rules,
+  .card-container_rules li,
+  .card-container-button {
+    margin-top: 1.5rem;
   }
 }
 
 /* Desktop Rules */
 @media screen and (min-width: 540px) {
+  .card-container_text,
+  .card-container_text h1,
+  .card-container_rules,
+  .card-container_rules li,
+  .card-container-button {
+    margin-top: 1.5rem;
+  }
+
+  .card-container_text h1 {
+    font-size: 100px;
+  }
 }
+
+/* color: var(--color-grayish-blue); */

@@ -10,7 +10,7 @@ const Pricing = () => {
     {id: 1, title: "Basic", price: "199.99", storage: "500 GB Storage", users: "2 Users Allowed", sendGB: "Send up to 3 GB"},
     {
       id: 2,
-      style: {background: "red"},
+      style: {background: "var(--color-gradient)", color: "var( --color-very-light-grayish-blue)"},
       title: "Professional",
       price: "249.99",
       storage: "1 TB Storage",

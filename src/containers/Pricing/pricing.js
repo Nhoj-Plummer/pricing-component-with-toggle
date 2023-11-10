@@ -16,12 +16,7 @@ const Pricing = () => {
       storage: "1 TB Storage",
       users: "5 Users Allowed",
       sendGB: "Send up to 10 GB",
-      buttonColor: {background: "white"},
-      buttonText: {
-        background: "linear-gradient(90deg, red, blue)",
-        backgroundClip: "text",
-        color: "transparent"
-      }
+      buttonColor: {background: "white", color: "hsl(237, 63%, 64%)"}
     },
     {id: 3, title: "Master", price: "399.99", storage: "2 TB Storage", users: "10 Users Allowed", sendGB: "Send up to 20 GB", textColor: {color: "var(--color-grayish-blue)"}}
   ];
@@ -44,7 +39,7 @@ const Pricing = () => {
         <div className="pricing-container_prices annually">
           {annualData.map(option => {
             console.log("option", option);
-            return <Card id={option.id} style={option.style} title={option.title} price={option.price} storage={option.storage} users={option.users} sendGB={option.sendGB} textColor={option.textColor} buttonColor={option.buttonColor} buttonText={option.buttonText} />;
+            return <Card id={option.id} style={option.style} title={option.title} price={option.price} storage={option.storage} users={option.users} sendGB={option.sendGB} textColor={option.textColor} buttonColor={option.buttonColor} />;
           })}
           {/* <Card title="Annually" /> */}
         </div>

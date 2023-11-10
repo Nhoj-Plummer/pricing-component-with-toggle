@@ -1,7 +1,7 @@
 import React from "react";
 import "./Card.css";
 
-const Card = ({id, style, title, price, storage, users, sendGB, textColor, buttonColor, buttonText}) => {
+const Card = ({id, style, title, price, storage, users, sendGB, textColor, buttonColor}) => {
   return (
     <div className="card-container" id={id} style={style}>
       <div className="card-container_text">
@@ -28,7 +28,7 @@ const Card = ({id, style, title, price, storage, users, sendGB, textColor, butto
 
       <div className="card-container-button">
         <button style={buttonColor}>
-          <p style={buttonText}>LEARN MORE</p>
+          <span >LEARN MORE</span>
         </button>
       </div>
     </div>

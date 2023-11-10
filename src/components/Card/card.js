@@ -26,8 +26,8 @@ const Card = ({id, style, title, price, storage, users, sendGB, textColor, butto
         </ul>
       </div>
 
-      <div className="card-container-button" style={buttonColor}>
-        <button>LEARN MORE</button>
+      <div className="card-container-button">
+        <button style={buttonColor}>LEARN MORE</button>
       </div>
     </div>
   );

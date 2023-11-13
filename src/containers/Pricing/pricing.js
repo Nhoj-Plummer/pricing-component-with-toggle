@@ -36,7 +36,7 @@ const Pricing = () => {
     {id: 1, title: "Basic", price: "199.99", storage: "500 GB Storage", users: "2 Users Allowed", sendGB: "Send up to 3 GB", textColor: {color: "var(--color-grayish-blue)"}},
     {
       id: 2,
-      style: {background: "var(--color-gradient)", color: "var( --color-very-light-grayish-blue)", position: width > 540 ? "relative" : "", height: width > 540 ? "32rem" : ""},
+      style: {background: "var(--color-gradient)", color: "var( --color-very-light-grayish-blue)", position: width > 540 ? "relative" : "", height: width > 540 ? "32rem" : "", boxShadow: width > 540 ? "none" : "" },
       title: "Professional",
       price: "249.99",
       storage: "1 TB Storage",

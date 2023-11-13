@@ -1,7 +1,6 @@
 .pricing-container {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   margin: 2rem auto;
   font-family: var(--font-family);
@@ -18,6 +17,7 @@
 }
 .pricing-container_prices {
   display: flex;
+  align-items: center;
   justify-content: center;
   margin-top: 2rem;
   border: 1px solid;

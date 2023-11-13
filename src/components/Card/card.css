@@ -32,8 +32,8 @@
   vertical-align: middle;
   line-height: 2.5;
   width: 90%;
-  border-top: .5px solid;
-  border-bottom: .5px solid;
+  border-top: 0.5px solid;
+  border-bottom: 0.5px solid;
 }
 
 .card-container-button button {
@@ -50,14 +50,9 @@
 }
 
 .card-container-button button:hover {
-  background: -webkit-linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  border: 1px solid purple;
-}
-
-.card-container-button button:hover {
-  
+  background: none;
+  color: hsl(237, 63%, 64%);
+  border: 1px solid;
 }
 
 /* Conditional Section */
@@ -68,26 +63,10 @@
     height: 27rem;
     margin-top: 1rem;
   }
-
-  /* .card-container_text,
-  .card-container_text h1,
-  .card-container_rules,
-  .card-container_rules li,
-  .card-container-button {
-    margin-top: 1.5rem;
-  } */
 }
 
 /* Desktop Rules */
 @media screen and (min-width: 540px) {
-  /* .card-container_text,
-  .card-container_text h1,
-  .card-container_rules,
-  .card-container_rules li,
-  .card-container-button {
-    margin-top: 2rem;
-  } */
-
   .card-container {
     width: 26%;
     height: 26rem;

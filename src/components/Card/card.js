@@ -1,7 +1,7 @@
 import React from "react";
 import "./Card.css";
 
-const Card = ({id, style, title, price, storage, users, sendGB, textColor, buttonColor}) => {
+const Card = ({id, style, title, price, storage, users, sendGB, textColor, buttonColor, buttonIn, buttonOut}) => {
   return (
     <div className="card-container" id={id} style={style}>
       <div className="card-container_text">
@@ -27,8 +27,8 @@ const Card = ({id, style, title, price, storage, users, sendGB, textColor, butto
       </div>
 
       <div className="card-container-button">
-        <button style={buttonColor}>
-          <span >LEARN MORE</span>
+        <button style={buttonColor} onMouseOver={buttonIn} onMouseOut={buttonOut}>
+          <span>LEARN MORE</span>
         </button>
       </div>
     </div>

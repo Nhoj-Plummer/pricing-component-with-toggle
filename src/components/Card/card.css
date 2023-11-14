@@ -41,19 +41,19 @@
   font-weight: 700;
   letter-spacing: 2px;
   border: none;
-  background: var(--color-gradient);
-  color: var(--color-very-light-grayish-blue);
+  /* background: var(--color-gradient);
+  color: var(--color-very-light-grayish-blue); */
   cursor: pointer;
   width: 90%;
   height: 40px;
   margin-top: 2rem;
 }
-
+/* 
 .card-container-button button:hover {
   background: none;
   color: hsl(237, 63%, 64%);
   border: 1px solid;
-}
+} */
 
 /* Conditional Section */
 /* Mobile Rules */

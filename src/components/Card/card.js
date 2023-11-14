@@ -1,7 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Card.css";
 
-const Card = ({id, style, title, price, storage, users, sendGB, textColor, buttonColor}) => {
+const Card = ({id, style, title, price, storage, users, sendGB, textColor, defaultBack, defaultColor}) => {
+  const hoverOff = {backgroundColor: "red", color: {defaultColor}};
+  const hoverOn = {background: {}, border: {}};
+
+  const [color, setColor] = useState(hoverOff);
+
   return (
     <div className="card-container" id={id} style={style}>
       <div className="card-container_text">
@@ -27,7 +32,7 @@ const Card = ({id, style, title, price, storage, users, sendGB, textColor, butto
       </div>
 
       <div className="card-container-button">
-        <button style={buttonColor}>
+        <button style={color}>
           <span>LEARN MORE</span>
         </button>
       </div>

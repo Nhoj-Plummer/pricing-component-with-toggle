@@ -1,7 +1,12 @@
-import "./App.css"
+import "./App.css";
+import {Pricing} from "./containers/containerindex";
 
 function App() {
-  return <></>
+  return (
+    <>
+      <Pricing />
+    </>
+  );
 }
 
-export default App
+export default App;

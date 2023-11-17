@@ -1,0 +1,20 @@
+.toggle-container {
+  display: flex;
+  width: 70px;
+  height: 32px;
+  background: var(--color-gradient);
+  cursor: pointer;
+  border-radius: 30px;
+  padding: 3px;
+}
+
+.toggle-container:hover {
+  opacity: 0.5;
+}
+
+.toggle-handle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--color-very-light-grayish-blue);
+}

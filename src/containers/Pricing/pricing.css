@@ -1,0 +1,48 @@
+.pricing-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem auto;
+  font-family: var(--font-family);
+  text-align: center;
+}
+
+.pricing-container_text h1 {
+  color: var(--color-dark-grayish-blue);
+}
+
+.pricing-container_prices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.pricing-container_toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 10px;
+}
+
+.pricing-container_toggle p {
+  color: var(--color-light-grayish-blue);
+  font-weight: 700;
+}
+
+/* Conditional Section */
+/* Mobile Rules */
+@media screen and (max-width: 540px) {
+  .pricing-container_prices {
+    width: 90%;
+    flex-direction: column;
+  }
+}
+
+/* Desktop Rules */
+@media screen and (min-width: 540px) {
+  .pricing-container_prices {
+    width: 70%;
+  }
+}

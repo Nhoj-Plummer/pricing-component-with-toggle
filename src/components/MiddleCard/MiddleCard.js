@@ -1,17 +1,10 @@
-import React, {useState} from "react";
+import React from "react";
 import "./MiddleCard.css";
 
 const MiddleCard = ({id, style, title, price, storage, users, sendGB, textColor, buttonStyle}) => {
-  const [buttonColor, setButtonColor] = useState(false);
-
-  const handleButtonColor = () => {
-    setButtonColor(!buttonColor);
-    console.log("Button COlor State: ", buttonColor);
-  };
-
   return (
-    <div className="card-container" id={id} style={style}>
-      <div className="card-container_text">
+    <div className="middle-card-container" id={id} style={style}>
+      <div className="middle-card-container_text">
         <p>{title}</p>
         <h1>
           <span>$</span>
@@ -19,7 +12,7 @@ const MiddleCard = ({id, style, title, price, storage, users, sendGB, textColor,
         </h1>
       </div>
 
-      <div className="card-container_rules" style={textColor}>
+      <div className="middle-card-container_rules" style={textColor}>
         <ul>
           <li>
             <span>{storage}</span>
@@ -33,8 +26,8 @@ const MiddleCard = ({id, style, title, price, storage, users, sendGB, textColor,
         </ul>
       </div>
 
-      <div className="card-container-button">
-        <button style={buttonStyle} onMouseOver={handleButtonColor}>
+      <div className="middle-card-container-button">
+        <button style={buttonStyle}>
           <span>LEARN MORE</span>
         </button>
       </div>

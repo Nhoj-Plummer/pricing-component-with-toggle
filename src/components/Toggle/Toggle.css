@@ -2,12 +2,12 @@
   display: flex;
   width: 70px;
   height: 32px;
-
   background: var(--color-gradient);
   cursor: pointer;
   border-radius: 30px;
   padding: 3px;
 }
+
 .toggle-container:hover {
   opacity: 0.5;
 }

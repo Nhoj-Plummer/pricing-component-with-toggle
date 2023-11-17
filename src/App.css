@@ -5,7 +5,15 @@
   scroll-behavior: smooth;
 }
 
+html,
 body {
+  height: 100%;
+}
+
+body {
+  background-image: url("./assets/bg-top.svg"), url("./assets/bg-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: right top, left bottom;
   background-color: var(--color-very-light-grayish-blue);
   text-align: center;
 }

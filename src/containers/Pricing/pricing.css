@@ -5,11 +5,6 @@
   margin: 2rem auto;
   font-family: var(--font-family);
   text-align: center;
-  border: 1px solid green;
-}
-
-.pricing-container_text {
-  border: 1px solid red;
 }
 
 .pricing-container_text h1 {
@@ -20,7 +15,6 @@
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
-  border: 1px solid;
 }
 
 .pricing-container_toggle {

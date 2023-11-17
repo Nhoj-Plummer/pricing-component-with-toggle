@@ -2,7 +2,7 @@
   display: flex;
   width: 70px;
   height: 32px;
-  border: 1px solid black;
+
   background: var(--color-gradient);
   cursor: pointer;
   border-radius: 30px;

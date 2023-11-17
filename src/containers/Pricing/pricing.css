@@ -10,6 +10,7 @@
 .pricing-container_text h1 {
   color: var(--color-dark-grayish-blue);
 }
+
 .pricing-container_prices {
   display: flex;
   align-items: center;
